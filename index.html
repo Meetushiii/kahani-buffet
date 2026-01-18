@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahani Buffet - Media & Entertainment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Kahani Buffet</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#overview">Overview</a></li>
+                <li class="dropdown">
+                    <a href="#projects">Projects <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#projects-films">Films</a></li>
+                        <li><a href="#projects-music">Music</a></li>
+                        <li><a href="#projects-podcast">Podcast</a></li>
+                        <li><a href="#projects-shows">Shows & Events</a></li>
+                        <li><a href="#projects-fitness">Fitness</a></li>
+                        <li><a href="#projects-news">News</a></li>
+                    </ul>
+                </li>
+                <li><a href="#sponsorship">Business Opportunities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="youtube-link">
+                <a href="https://www.youtube.com/@KAHANIBUFFET" target="_blank" rel="noopener noreferrer" class="youtube-btn">
+                    <span>📺</span> YouTube
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Carousel -->
+    <section id="home" class="banner-section">
+        <div class="banner-carousel">
+            <div class="banner-slide active">
+                <div class="banner-content">
+                    <h2>Kahani Buffet</h2>
+                    <p>SPONSORSHIP PROPOSAL</p>
+                    <p style="font-size: 1rem; margin-top: 10px;">www.kahanibuffet.com</p>
+                </div>
+            </div>
+            <div class="banner-slide">
+                <div class="banner-content">
+                    <h2>Creative Excellence</h2>
+                    <p>Bringing Your Vision to Screen</p>
+                </div>
+            </div>
+            <div class="banner-slide">
+                <div class="banner-content">
+                    <h2>Innovative Storytelling</h2>
+                    <p>Every Frame Tells a Story</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+            <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="overview-section">
+        <div class="container">
+            <h2 class="section-title">Overview</h2>
+            
+            <!-- About Us -->
+            <div class="overview-item">
+                <h3>About Us</h3>
+                <div class="content-box">
+                    <p>KAHANI BUFFET is a premier entertainment platform offering a unique glimpse into the lives and minds of renowned personalities from India and worldwide. Through our curated content, including stories, films, and documentaries, you'll gain insights into their thoughts, lifestyles, and opinions on their audience. Stay connected for an enriched experience tailored to your interests.</p>
+                </div>
+            </div>
+
+            <!-- Our Journey -->
+            <div class="overview-item">
+                <h3>Our Journey</h3>
+                <div class="content-box">
+                    <p>Our platform is designed to cater to a diverse audience globally, offering content that resonates with viewers and listeners from India and beyond. Since launching in 2025, we've been working diligently to fulfill our vision. Our upcoming schedule includes two podcasts with renowned Bollywood personalities this month, followed by a series of engaging content, including films, podcasts, documentaries, and interviews, all planned through March 2026. We're committed to this long-term journey and are excited to share our progress with our audience.</p>
+                </div>
+            </div>
+
+            <!-- Our Vision -->
+            <div class="overview-item">
+                <h3>Our Vision</h3>
+                <div class="content-box">
+                    <p>KAHANI BUFFET is an exciting new channel that's all about sparking creativity and entertainment. Our mission is to bring you closer to the world of Bollywood by sharing the personal stories of its stars. We'll feature films that are not just entertaining but also showcase artistic brilliance and creativity.</p>
+                    <p>Our music section will be a treasure trove of soulful Hindi and English tracks, as well as folk music that connects you to your heritage. We'll also be exploring the world of politics, giving you a glimpse into the goals and motivations of our leaders. And, if you're interested in fitness, you'll love our athlete features, where they'll share their secrets to staying fit and their thoughts on societal wellness. Kahani Buffet is a startup that launched in 2025, and we're committed to making a mark in the world of entertainment.</p>
+                </div>
+            </div>
+
+            <!-- Our Concept -->
+            <div class="overview-item">
+                <h3>Our Concept</h3>
+                <p class="section-subtitle">Our buffet features a mix of different entertainment genres.</p>
+                <div class="concept-grid">
+                    <div class="concept-item">
+                        <div class="concept-icon">🎬</div>
+                        <h3>FILMS</h3>
+                        <p>Film Promotion</p>
+                    </div>
+                    <div class="concept-item">
+                        <div class="concept-icon">🎙️</div>
+                        <h3>PODCAST</h3>
+                    </div>
+                    <div class="concept-item">
+                        <div class="concept-icon">🎤</div>
+                        <h3>INTERVIEWS</h3>
+                    </div>
+                    <div class="concept-item">
+                        <div class="concept-icon">📹</div>
+                        <h3>DOCUMENTARIES</h3>
+                    </div>
+                    <div class="concept-item">
+                        <div class="concept-icon">🎵</div>
+                        <h3>MUSIC</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-main-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-categories">
+                <div id="projects-films" class="project-category">
+                    <h3>🎬 Films</h3>
+                    <p>Explore our collection of films featuring artistic brilliance and creativity.</p>
+                </div>
+                <div id="projects-music" class="project-category">
+                    <h3>🎵 Music</h3>
+                    <p>A treasure trove of soulful Hindi and English tracks, as well as folk music.</p>
+                </div>
+                <div id="projects-podcast" class="project-category">
+                    <h3>🎙️ Podcast</h3>
+                    <p>Engaging conversations with renowned personalities from Bollywood and beyond.</p>
+                </div>
+                <div id="projects-shows" class="project-category">
+                    <h3>🎭 Shows & Events</h3>
+                    <p>Live events and shows featuring entertainment and cultural experiences.</p>
+                </div>
+                <div id="projects-fitness" class="project-category">
+                    <h3>💪 Fitness</h3>
+                    <p>Athlete features sharing secrets to staying fit and thoughts on societal wellness.</p>
+                </div>
+                <div id="projects-news" class="project-category">
+                    <h3>📰 News</h3>
+                    <p>Latest updates, announcements, and glimpses from the entertainment world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Founder Section -->
+    <section id="founder" class="founder-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">A Person Behind The Company</h2>
+            <p class="section-subtitle">About the founder</p>
+            <div class="founder-content">
+                <div class="founder-info">
+                    <h3>MOHAMMAD GELANI PASHA</h3>
+                    <p class="founder-role">Founder & Owner</p>
+                    <p>Mohammad Gelani Pasha is a multifaceted professional in the entertainment industry, working as an Actor, Casting Director and Trainer. With over a decade of experience, he has honed his skills in Theater, Acting, Writing, and Role-Playing.</p>
+                    <p>Gelani Pasha's background in performing arts, including a diploma from Shri Ram Centre, Delhi, has equipped him with the expertise to excel in his field. His latest venture, Kahani Buffet, is a testament to his innovative approach and vision for the industry, and it's exciting to see it flourish.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Partner Section -->
+    <section class="why-partner-section">
+        <div class="container">
+            <h2 class="section-title">Why Partner With Us?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🌍</div>
+                    <h3>NATIONWIDE AND GLOBAL REACH</h3>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">👥</div>
+                    <h3>ENHANCED CUSTOMER ENGAGEMENTS</h3>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📊</div>
+                    <h3>MEASURABLE RESULTS</h3>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📢</div>
+                    <h3>INCREASED BRAND EXPOSURE</h3>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💰</div>
+                    <h3>COST-EFFECTIVENESS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Opportunities Section -->
+    <section id="sponsorship" class="sponsorship-section">
+        <div class="container">
+            <h2 class="section-title">Business Opportunities</h2>
+        <div class="container">
+            <h2 class="section-title">SPONSORSHIP OPPORTUNITY & BENEFIT</h2>
+            
+            <!-- Title Sponsor -->
+            <div class="sponsor-package">
+                <div class="sponsor-header">
+                    <h3>Title Sponsor</h3>
+                    <p class="sponsor-subtitle">(Presenting Partner for an year, INR 10,00,000)</p>
+                </div>
+                <div class="sponsor-content">
+                    <p class="sponsor-intro">Join us for an exciting partnership opportunity! Over the one year, we'll be creating 15-20 high-quality podcasts, films, music videos and interviews, and you'll be featured as a "PRESENTING PARTNER" in all of them permanently.</p>
+                    <ul class="sponsor-benefits">
+                        <li>We'll feature your BRAND NAME with our Content MAIN TITLE.</li>
+                        <li>In the introduction, we'll highlight your BRAND NAME.</li>
+                        <li>Our guests will talk about your BRAND.</li>
+                        <li>We'll display your brand's accessories on screen.</li>
+                        <li>Thanking note will be posted on social media.</li>
+                        <li>And this collaboration will ensure your BRAND NAME's permanent presence on our platform, visible to millions and billions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Associate Sponsor -->
+            <div class="sponsor-package">
+                <div class="sponsor-header">
+                    <h3>Associate Sponsorship</h3>
+                    <p class="sponsor-subtitle">(for an year, INR 5,00,000/-)</p>
+                </div>
+                <div class="sponsor-content">
+                    <p class="sponsor-intro">Deliverables: The content will be renamed with "Associate Sponsor."</p>
+                    <ul class="sponsor-benefits">
+                        <li>Renamed our content title with your BRAND NAME as Powered by Associate Sponsor.</li>
+                        <li>We'll display your BRAND's accessories on screen.</li>
+                        <li>And this collaboration will ensure your BRAND NAME's permanent presence on our platform, visible to millions and billions.</li>
+                    </ul>
+                    <p class="sponsor-note">It can be customized according to your convenience.</p>
+                </div>
+            </div>
+
+            <!-- Strategic Partnerships -->
+            <div class="strategic-partnership">
+                <h3>We are open to strategic partnerships</h3>
+                <p>and invite you to consider as a financer and producer.</p>
+                <p class="partnership-note">Having your collaboration as a part of our platform would be the development of an ever-lasting relationship.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Section -->
+    <section id="projects" class="upcoming-section">
+        <div class="container">
+            <h2 class="section-title">Upcoming</h2>
+            <p class="section-subtitle">Lights, Camera, Action</p>
+            <div class="projects-tabs">
+                <button class="tab-btn active" onclick="filterProjects('all')">All</button>
+                <button class="tab-btn" onclick="filterProjects('movies')">Movies</button>
+                <button class="tab-btn" onclick="filterProjects('webseries')">Webseries</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="movies">
+                    <div class="project-image">
+                        <div class="placeholder-image">Coming Soon</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Title 1</h3>
+                        <p class="project-type">Movie</p>
+                        <span class="status-badge coming-soon">Coming Soon</span>
+                    </div>
+                </div>
+                <div class="project-card" data-category="webseries">
+                    <div class="project-image">
+                        <div class="placeholder-image">Coming Soon</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Title 2</h3>
+                        <p class="project-type">Webseries</p>
+                        <span class="status-badge coming-soon">Coming Soon</span>
+                    </div>
+                </div>
+                <div class="project-card" data-category="movies">
+                    <div class="project-image">
+                        <div class="placeholder-image">Coming Soon</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Title 3</h3>
+                        <p class="project-type">Movie</p>
+                        <span class="status-badge coming-soon">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2 class="section-title">News</h2>
+            <p class="section-subtitle">Glimpses, Interactions, Announcements</p>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <div class="placeholder-image">News Image</div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-tag">News</span>
+                        <h3>Latest Project Announcement</h3>
+                        <p>Exciting updates about our upcoming projects and collaborations...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <div class="placeholder-image">News Image</div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-tag">News</span>
+                        <h3>Behind the Scenes</h3>
+                        <p>Take a look at what goes into creating our content...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <div class="placeholder-image">News Image</div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-tag">News</span>
+                        <h3>Industry Recognition</h3>
+                        <p>Celebrating milestones and achievements in entertainment...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+            <div class="view-all">
+                <a href="#" class="view-all-btn">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Approach, Interact, Evolve</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>312, Janki Center, Near Chitrakoot Stadium<br>Andheri (W), Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>kahanibuffet@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 987 09 57 885</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-details">
+                            <h4>Website</h4>
+                            <p>www.kahanibuffet.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Thank You!</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 10px;">Hope You Are Interested</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <a href="https://www.youtube.com/@KAHANIBUFFET" target="_blank" rel="noopener noreferrer" class="footer-youtube-link">
+                        <span>📺</span> YouTube Channel
+                    </a>
+                </div>
+            </div>
+            <p style="margin-top: 20px;">Copyright © Kahani Buffet. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
