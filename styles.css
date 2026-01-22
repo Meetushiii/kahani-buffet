@@ -43,7 +43,9 @@ body {
 body:has(#page-home.active) .logo-watermark {
     display: none;
 }
-
+body:not(:has(#page-home.active)) .logo-watermark img {
+    width: 120px;
+}
 /* Page Container */
 .page-container {
     margin-top: 70px;
