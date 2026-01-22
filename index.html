@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.youtube.com; frame-src 'self' https://www.youtube.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://go.screenpal.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.youtube.com https://go.screenpal.com; frame-src 'self' https://www.youtube.com https://go.screenpal.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests;">
     <title>Kahani Buffet - Media & Entertainment</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Logo Watermark -->
     <div class="logo-watermark">
-        <img src="images/logo.png" alt="Kahani Buffet Logo">
+        <img src="images/file.svg" alt="Kahani Buffet Logo">
     </div>
 
     <!-- Navigation -->
@@ -68,13 +68,10 @@
                         <h1 class="home-title">Kahani Buffet</h1>
                         <div class="home-media-container">
                             <div class="home-video">
-                                <video autoplay muted loop playsinline class="home-video-element">
-                                    <source src="images/video.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
+                                <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" scrolling="no" src="https://go.screenpal.com/player/cOV3Y6n3j1K?ff=1&ahc=1&dcc=1&bg=transparent&share=1&download=1&embed=1&cl=1&autoplay=1&loop=1&muted=1" allowfullscreen="true"></iframe>
                             </div>
                             <div class="home-logo-display">
-                                <img src="images/logo.png" alt="Kahani Buffet Logo">
+                                <img src="images/file.svg" alt="Kahani Buffet Logo">
                             </div>
                         </div>
                     </div>
