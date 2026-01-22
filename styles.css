@@ -293,7 +293,7 @@ body:has(#page-home.active) .logo-watermark {
 
 .home-video {
     flex: 1;
-    max-width: 700px;
+    max-width: 800px;
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 15px;
@@ -326,7 +326,7 @@ body:has(#page-home.active) .logo-watermark {
 
 .home-logo-display {
     flex-shrink: 0;
-    width: 350px;
+    width: 400px;
     height: auto;
 }
 
@@ -826,7 +826,7 @@ section {
     }
 
     .home-logo-display {
-        width: 250px;
+        width: 280px;
     }
 
     .section-title {
@@ -869,7 +869,7 @@ section {
     }
 
     .home-logo-display {
-        width: 200px;
+        width: 220px;
     }
 
     .section-title {
