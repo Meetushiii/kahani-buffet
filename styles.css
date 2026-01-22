@@ -288,12 +288,12 @@ body:has(#page-home.active) .logo-watermark {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .home-video {
     flex: 1;
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 15px;
@@ -304,6 +304,7 @@ body:has(#page-home.active) .logo-watermark {
     background: linear-gradient(135deg, #FAB922 0%, #f5a623 50%, #FAB922 100%);
     background-size: 200% 200%;
     animation: gradientShift 3s ease infinite;
+    pointer-events: none;
 }
 
 .home-video::before {
@@ -322,11 +323,12 @@ body:has(#page-home.active) .logo-watermark {
 .home-video iframe {
     position: relative;
     z-index: 1;
+    pointer-events: none;
 }
 
 .home-logo-display {
     flex-shrink: 0;
-    width: 400px;
+    width: 280px;
     height: auto;
 }
 
@@ -826,7 +828,7 @@ section {
     }
 
     .home-logo-display {
-        width: 280px;
+        width: 200px;
     }
 
     .section-title {
@@ -869,7 +871,7 @@ section {
     }
 
     .home-logo-display {
-        width: 220px;
+        width: 180px;
     }
 
     .section-title {
