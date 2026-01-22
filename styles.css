@@ -33,10 +33,11 @@ body {
 }
 
 .logo-watermark img {
-    width: 250px;
-    height: 350;
+    width: 120px;
+    height: auto;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
+
 
 /* Hide watermark only when home page is active */
 body:has(#page-home.active) .logo-watermark {
