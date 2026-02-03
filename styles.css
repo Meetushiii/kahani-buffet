@@ -38,7 +38,6 @@ body {
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
-
 /* Hide watermark only when home page is active */
 body:has(#page-home.active) .logo-watermark {
     display: none;
@@ -46,6 +45,7 @@ body:has(#page-home.active) .logo-watermark {
 body:not(:has(#page-home.active)) .logo-watermark img {
     width: 120px;
 }
+
 /* Page Container */
 .page-container {
     margin-top: 70px;
@@ -436,6 +436,73 @@ section {
 
 .content-box p:last-child {
     margin-bottom: 0;
+}
+
+/* Team Section */
+.team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.team-member {
+    display: flex;
+    gap: 30px;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid var(--black);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: var(--transition);
+    align-items: flex-start;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.team-photo {
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--black);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--yellow-bg);
+    flex-shrink: 0;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.team-info {
+    flex: 1;
+}
+
+.team-info h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 8px;
+}
+
+.team-role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 15px !important;
+}
+
+.team-bio {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-dark);
 }
 
 .concept-grid {
@@ -840,6 +907,36 @@ section {
         font-size: 2rem;
     }
 
+    .team-member {
+        flex-direction: column;
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .team-photo {
+        width: 120px;
+        height: 120px;
+        min-width: 120px;
+        margin: 0 auto;
+    }
+
+    .team-info {
+        text-align: center;
+    }
+
+    .team-info h4 {
+        font-size: 1.3rem;
+    }
+
+    .team-role {
+        font-size: 1rem;
+    }
+
+    .team-bio {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
     .founders-grid {
         grid-template-columns: 1fr;
         gap: 25px;
@@ -881,6 +978,32 @@ section {
 
     .section-title {
         font-size: 1.7rem;
+    }
+
+    .team-container {
+        gap: 30px;
+    }
+
+    .team-member {
+        padding: 20px;
+    }
+
+    .team-photo {
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+    }
+
+    .team-info h4 {
+        font-size: 1.2rem;
+    }
+
+    .team-role {
+        font-size: 0.95rem;
+    }
+
+    .team-bio {
+        font-size: 0.9rem;
     }
 
     .sponsor-package.compact {
