@@ -1,40 +1,112 @@
+/* Contact Form Container */
 .contact-form-wrapper {
-    margin-top: 2rem;
-    max-width: 500px;
+    margin-top: 3rem;
+    padding: 2rem;
+    max-width: 520px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 14px;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* Title */
+.contact-form-wrapper h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* Form layout */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Field group */
 .contact-form .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
+    gap: 0.4rem;
 }
 
+/* Labels */
 .contact-form label {
-    font-size: 0.9rem;
-    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+    opacity: 0.85;
 }
 
+/* Inputs & textarea */
 .contact-form input,
 .contact-form textarea {
-    padding: 0.6rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 0.75rem 0.9rem;
     font-size: 0.95rem;
+    color: #fff;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Placeholder */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+/* Focus state */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #FAB922;
+    box-shadow: 0 0 0 2px rgba(250, 185, 34, 0.25);
+}
+
+/* Textarea tweaks */
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit button */
 .submit-btn {
-    margin-top: 0.5rem;
-    padding: 0.7rem;
+    margin-top: 0.8rem;
+    align-self: flex-start;
+    padding: 0.75rem 1.8rem;
+    border-radius: 999px;
     border: none;
-    border-radius: 6px;
-    background: #FAB922;
+    background: linear-gradient(135deg, #FAB922, #ffcf5a);
     color: #000;
     font-weight: 600;
+    font-size: 0.95rem;
     cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
 }
 
+/* Button hover */
 .submit-btn:hover {
-    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(250, 185, 34, 0.35);
+    opacity: 0.95;
+}
+
+/* Button active */
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(250, 185, 34, 0.25);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .logo {
