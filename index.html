@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.youtube.com; frame-src 'self' https://www.youtube.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.youtube.com https://formspree.io; frame-src 'self' https://www.youtube.com; base-uri 'self'; form-action 'self' https://formspree.io; object-src 'none'; upgrade-insecure-requests;">
     <title>Kahani Buffet - Media & Entertainment</title>
+    <meta name="description" content="Kahani Buffet - Premier entertainment platform featuring films, music, podcasts, and exclusive content with Bollywood personalities.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-
     <!-- Navigation -->
     <nav class="navbar">
-    <div class="container">
-        <div class="logo">
-            <img src="file.svg" alt="Kahani Buffet Logo" class="logo-img">
-            <h1>Kahani Buffet</h1>
-        </div>
-        <ul class="nav-menu">
-            <li><a href="#" data-page="home" class="nav-link">Home</a></li>
-            <li><a href="#" data-page="overview" class="nav-link">Overview</a></li>
-            <li><a href="#" data-page="projects" class="nav-link">Projects</a></li>
-            <li><a href="#" data-page="partners" class="nav-link">Partners & Opportunities</a></li>
-            <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
-        </ul>
+        <div class="container">
+            <div class="logo">
+                <img src="file.svg" alt="Kahani Buffet Logo" class="logo-img">
+                <h1>Kahani Buffet</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+                <li><a href="#" data-page="overview" class="nav-link">Overview</a></li>
+                <li><a href="#" data-page="projects" class="nav-link">Projects</a></li>
+                <li><a href="#" data-page="partners" class="nav-link">Partners & Opportunities</a></li>
+                <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
+            </ul>
             <div class="social-links">
-                <a href="https://www.youtube.com/@KAHANIBUFFET" target="_blank" rel="noopener noreferrer" class="social-btn youtube-btn">
+                <a href="https://www.youtube.com/@KAHANIBUFFET" target="_blank" rel="noopener noreferrer" class="social-btn youtube-btn" aria-label="Visit our YouTube channel">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF0000">
                         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                     </svg>
                 </a>
-                <a href="https://www.instagram.com/kahanibuffet/?hl=en" target="_blank" rel="noopener noreferrer" class="social-btn instagram-btn">
+                <a href="https://www.instagram.com/kahanibuffet/?hl=en" target="_blank" rel="noopener noreferrer" class="social-btn instagram-btn" aria-label="Visit our Instagram">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                     </svg>
@@ -68,7 +68,7 @@
                         <h1 class="home-title">Kahani Buffet</h1>
                         <div class="home-media-container">
                             <div class="home-video">
-                                <video autoplay loop playsinline class="home-video-element">
+                                <video autoplay loop muted playsinline class="home-video-element">
                                     <source src="video.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
 
-                    <!-- Team Section - NEW -->
+                    <!-- Team Section -->
                     <div class="overview-item">
                         <h3>Core Leadership Team</h3>
                         <div class="team-container">
@@ -121,8 +121,7 @@
                                 <div class="team-info">
                                     <h4>Mohammad Gelani Pasha</h4>
                                     <p class="team-role">Founder & Owner</p>
-                                    <p class="team-bio">A seasoned actor and casting director with a strong vision for the growth and development of the Bollywood industry and digital platforms. With a decade-long experience in theater, acting, training, and writing, Gelani has made a name for himself in the entertainment industry. A diploma holder in performing arts from Shri Ram Centre, Delhi, and also served there as an artist in SRC Repertory Company. He has recently launched Kahani Buffet, a venture that is gaining momentum and achieving success.
-<a href="https://www.imdb.com/name/nm13242257/">ImDB</a>a></p>
+                                    <p class="team-bio">A seasoned actor and casting director with a strong vision for the growth and development of the Bollywood industry and digital platforms. With a decade-long experience in theater, acting, training, and writing, Gelani has made a name for himself in the entertainment industry. A diploma holder in performing arts from Shri Ram Centre, Delhi, and also served there as an artist in SRC Repertory Company. He has recently launched Kahani Buffet, a venture that is gaining momentum and achieving success. <a href="https://www.imdb.com/name/nm13242257/" target="_blank" rel="noopener noreferrer">View IMDB Profile</a></p>
                                 </div>
                             </div>
 
@@ -212,7 +211,6 @@
 
         <!-- Partners & Opportunities Page -->
         <div id="page-partners" class="page">
-
             <section class="sponsorship-section compact">
                 <div class="container">
                     <h2 class="section-title">Business Opportunities</h2>
@@ -287,7 +285,7 @@
                                 <h4>Phone</h4>
                                 <p class="phone-number" data-phone="+919870957885">
                                     <span>+91 987 09 57 885</span>
-                                    <button class="copy-btn">
+                                    <button class="copy-btn" aria-label="Copy phone number">
                                         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                                             <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
                                         </svg>
@@ -295,38 +293,40 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="contact-form-wrapper compact">
-    <h3>Send Us a Query</h3>
 
-    <form action="https://formspree.io/f/xeelqdkq" method="POST" class="contact-form">
-        
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-        </div>
+                        <!-- Enhanced Contact Form -->
+                        <div class="contact-form-wrapper">
+                            <h3>Send Us a Query</h3>
+                            <form action="https://formspree.io/f/xeelqdkq" method="POST" class="contact-form" id="contactForm">
+                                
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                </div>
 
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                                </div>
 
-        <div class="form-group">
-            <label for="phone">Phone (optional)</label>
-            <input type="tel" id="phone" name="phone">
-        </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+                                </div>
 
-        <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
+                                <div class="form-group">
+                                    <label for="message">Your Message</label>
+                                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your inquiry..." required></textarea>
+                                </div>
 
-        <!-- Optional hidden fields -->
-        <input type="hidden" name="_subject" value="New Query from Kahani Buffet Website">
-        <input type="hidden" name="_template" value="table">
+                                <!-- Hidden fields for Formspree -->
+                                <input type="hidden" name="_subject" value="New Query from Kahani Buffet Website">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_next" value="thanks.html">
 
-        <button type="submit" class="submit-btn">Send Message</button>
-    </form>
-</div>
+                                <button type="submit" class="submit-btn">Send Message</button>
+                            </form>
+                        </div>
 
                     </div>
                 </div>
@@ -336,7 +336,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>© Kahani Buffet. All rights reserved.</p>
+            <p>&copy; 2025 Kahani Buffet. All rights reserved.</p>
         </div>
     </footer>
 
