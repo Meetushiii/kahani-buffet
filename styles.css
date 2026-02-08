@@ -1,3 +1,42 @@
+.contact-form-wrapper {
+    margin-top: 2rem;
+    max-width: 500px;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+.submit-btn {
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 6px;
+    background: #FAB922;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
 .logo {
     display: flex;
     align-items: center;
